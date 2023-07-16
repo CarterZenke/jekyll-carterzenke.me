@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #444;
+}
+
+.nav-link {
+    color: grey !important;
+}
+
+.active {
+    color: #404664 !important;
+}
+
+.card .active {
+    color: white !important;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+img {
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        float: left;
+    }
+}
+
+.yt-video iframe {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.yt-video {
+    position: relative;
+    display: block;
+    width: 100%; /* width of iframe wrapper */
+    height: 0;
+    padding: 0% 0% 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
