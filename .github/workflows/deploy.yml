@@ -6,7 +6,7 @@ on:
 jobs:
   deploy:
     permissions:
-      - id-token: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
