@@ -25,4 +25,4 @@ jobs:
       - name: Build Jekyll Site
         run: bundle exec jekyll build
       - name: Deploy to S3
-        run: aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }}/ --exclude compose.yml --exclude README.md --no-guess-mime-type --delete
+        run: aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }} --exclude compose.yml --exclude README.md --no-guess-mime-type --delete
