@@ -1,0 +1,32 @@
+{
+  "ErrorDocument": {
+    "Key": "error.html"
+  },
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "sections"
+      },
+      "Redirect": {
+        "HostName": "cs50.harvard.edu",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "college/2023/fall/sections/"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "sections/1"
+      },
+      "Redirect": {
+        "HostName": "cs50.harvard.edu",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "college/2023/fall/sections/1"
+      }
+    }
+  ]
+}
