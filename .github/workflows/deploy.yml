@@ -10,7 +10,7 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Check out repository
         uses: actions/checkout@v3
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -18,12 +18,12 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE }}
           role-session-name: github-actions-deploy
           aws-region: ${{ secrets.AWS_REGION }}
-      - name: Install Ruby and Gems
+      - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
-      - name: Build Jekyll Site
+      - name: Build Jekyll site
         run: bundle exec jekyll build
       - name: Deploy to S3
         run: aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }} --exclude compose.yml --exclude README.md --no-guess-mime-type --delete
