@@ -1,0 +1,8 @@
+s3:
+  index: "index.html"
+  error: "error.html"
+  redirects:
+    - path: "/sections"
+      destination: "https://cs50.harvard.edu/college/2023/fall/sections/"
+    - path: "/sections/1"
+      destination: "https://cs50.harvard.edu/college/2023/fall/sections/1"
