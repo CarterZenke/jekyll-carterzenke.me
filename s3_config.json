@@ -4,5 +4,18 @@
   },
   "ErrorDocument": {
     "Key": "error.html"
-  }
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "sections"
+      },
+      "Redirect": {
+        "HostName": "cs50.harvard.edu",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "college/2023/fall/sections/"
+      }
+    }
+  ]
 }
