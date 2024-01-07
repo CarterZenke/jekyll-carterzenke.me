@@ -79,10 +79,10 @@ img {
 }
 
 p {
-    font-family: 'DM Mono', monospace;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
-p.tagline {
-    font-family: 'Inter', sans-serif;
+p.role {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
 }
