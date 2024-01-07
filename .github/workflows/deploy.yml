@@ -23,11 +23,9 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-      - name: Build S3 config file
-        run: ruby yaml_to_s3_json_config_converter.rb
       - name: Build Jekyll site
         run: bundle exec jekyll build
       - name: Deploy to S3
         run: >
           aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }} --exclude compose.yml --exclude README.md --exclude *.json --exclude *.rb --delete &&
-          aws s3api put-bucket-website --bucket ${{ secrets.S3_BUCKET }} --website-configuration file://s3_config.json
+          aws s3api put-bucket-website --bucket ${{ secrets.S3_BUCKET }} --website-configuration file://_site/s3_config.json
