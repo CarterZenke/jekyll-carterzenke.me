@@ -4,3 +4,5 @@ s3:
   redirects:
     - path: /sections
       destination: https://cs50.harvard.edu/college/2023/fall/sections/
+    - path: /ncboe
+      destination: https://youtu.be/nVjMOChUFyY?t=4996
