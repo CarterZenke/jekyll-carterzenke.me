@@ -1,4 +1,6 @@
 - name: Teaching
   link: /
 - name: OpenCourseWare
-  link: /courses.html
+  link: /courses/
+- name: Publications
+  link: /publications/
