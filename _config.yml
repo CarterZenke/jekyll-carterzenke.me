@@ -10,3 +10,5 @@ s3:
       destination: https://docs.google.com/spreadsheets/d/1L0u2MvJmxVAy7euXSq7b861Wuc-1kb7nsuNULAbCAaM/edit?usp=sharing
     - path: /remix
       destination: https://drive.google.com/drive/folders/1c7C1r2DDc4cuQUqJudR7wf6HoEKMiorW?usp=sharing
+    - path: /nextech
+      destination: https://drive.google.com/drive/folders/1wtQl2G1Rvmu3iBQwUceGKFxICNZKkSSQ?usp=drive_link
