@@ -27,6 +27,17 @@
         "Protocol": "https",
         "ReplaceKeyPrefixWith": "diagram/ZpwngWw-U5VzXCQY/t/cs50/4e7f89627c4b87a6906f2184e3c5e100e2bbdc36ade796aeb39d62e314214ad2"
       }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "classrooms"
+      },
+      "Redirect": {
+        "HostName": "docs.google.com",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "spreadsheets/d/1L0u2MvJmxVAy7euXSq7b861Wuc-1kb7nsuNULAbCAaM/edit?usp=sharing"
+      }
     }
   ]
 }
