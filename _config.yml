@@ -12,5 +12,5 @@ s3:
       destination: https://drive.google.com/drive/folders/1c7C1r2DDc4cuQUqJudR7wf6HoEKMiorW?usp=sharing
     - path: /nextech
       destination: https://drive.google.com/drive/folders/1wtQl2G1Rvmu3iBQwUceGKFxICNZKkSSQ?usp=drive_link
-    - path:
+    - path: /emerging-pedagogies
       destination: https://carterzenke.me/workshops/2024/fall/emerging-pedagogies/Generative-AI-and-Pedagogical-Innovation.pdf
