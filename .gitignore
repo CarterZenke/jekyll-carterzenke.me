@@ -8,4 +8,6 @@ vendor/
 Gemfile.lock
 .vscode/
 
+.DS_Store
+
 s3_config.json
