@@ -14,3 +14,5 @@ s3:
       destination: https://drive.google.com/drive/folders/1wtQl2G1Rvmu3iBQwUceGKFxICNZKkSSQ?usp=drive_link
     - path: /emerging-pedagogies
       destination: https://carterzenke.me/workshops/2024/fall/emerging-pedagogies/Generative-AI-and-Pedagogical-Innovation.pdf
+    - path: /ap-csp-exam
+      destination: https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf
